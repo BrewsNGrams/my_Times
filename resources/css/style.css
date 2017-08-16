@@ -6,6 +6,8 @@ header {
   border-bottom: 1px solid black;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  position: fixed;
 }
 
 h1 {
@@ -24,4 +26,5 @@ nav {
 
 a {
   color: black;
+  padding: 20px 10px;
 }
