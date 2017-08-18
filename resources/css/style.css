@@ -1,32 +1,37 @@
 header {
   display: flex;
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: bold;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
   background-color: white;
+  background-size: cover;
+  margin-top: -10px;
+  width: 100%;
+  font-family: verdana;
+  font-size: 14px;
+  font-weight: bold;
   border-bottom: 1px solid black;
-  padding: 0 40px;
+  z-index: 5;
 }
 
 .logo {
-  color: aquamarine;
   display: flex;
-  font-size: 14px;
+  justify-content: flex-start;
   align-items: center;
-  width: 20%;
-  padding: 0 30px;
+  padding: 5px;
+  width: 25%;
+  color: aquamarine;
 }
 
 .logo p {
-  padding: 10px;
+  padding-left: 10px;
 }
 
 nav {
-  display: inline-flex;
+  display: flex;
   justify-content: space-around;
-  width: 20%;
+  align-items: center;
+  width: 25%;
 }
 
 a {
@@ -35,64 +40,95 @@ a {
 
 main {
   display: flex;
-  height: 1232px;
+  padding-top: 116px;
   font-family: georgia;
   font-size: 17px;
   color: black;
+  z-index: 10;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 5px;
 }
+
 .large {
-  display: inline-flex;
   flex-grow: 3;
   width: 630px;
 }
 
-.medium_column {
+.medium {
   flex-grow: 2;
   width: 300px;
 }
 
-.small_column {
+.small {
   flex-grow: 1;
-  align-content: center;
   width: 240px;
-  align-items: center;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.img_content {
+.stories {
   display: flex;
+  flex-direction: row;
+}
+
+.image_content {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 300px;
-  font-weight: bold;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: georgia;
   font-size: 30px;
+  font-weight: bold;
   color: white;
-}
-.phish {
-  background-image: url(../../resources/imgs/img-story-main.png);
+  height: 300px;
+  margin-top: 0;
 }
 
-.phish h2 {
+h3 {
+  margin: 0 20px;
+}
+
+.phish_pic {
+  justify-content: flex-start;
+  text-align: left;
   font-size: 40px;
+  background-image: url(../../resources/imgs/img-story-main.png);
 }
 
 .earth {
   background-image: url(../../resources/imgs/img-story-2.png);
 }
 
-.camera {
+.cameras {
   background-image: url(../../resources/imgs/img-story-3.png);
 }
 
-.cats {
+.cat_pic {
   background-image: url(../../resources/imgs/img-story-1.png);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  background-color: whiteSmoke;
+  font-family: verdana;
+  font-size: 12px;
+  color: dimGray;
+}
+
+li {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.small h4 {
+  font-size: 16px;
+  font-weight: bold;
+  align-self: center;
 }
