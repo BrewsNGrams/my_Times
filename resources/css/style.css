@@ -132,3 +132,41 @@ li {
   font-weight: bold;
   align-self: center;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  height: 100px;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+.bottom_nav {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom_nav nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.bottom_nav nav a {
+  padding: 10px;
+}
+
+h5 {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+}
